@@ -117,9 +117,10 @@
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.fill_box);
             this.panel1.Controls.Add(this.outline_box);
-            this.panel1.Location = new System.Drawing.Point(0, 27);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(677, 233);
+            this.panel1.Size = new System.Drawing.Size(677, 215);
             this.panel1.TabIndex = 1;
             // 
             // label3
@@ -202,20 +203,20 @@
             this.groupBox1.Controls.Add(this.rectangleButton);
             this.groupBox1.Controls.Add(this.ellipseButton);
             this.groupBox1.Controls.Add(this.textButton);
-            this.groupBox1.Location = new System.Drawing.Point(22, 15);
+            this.groupBox1.Location = new System.Drawing.Point(21, 8);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(206, 198);
+            this.groupBox1.Size = new System.Drawing.Size(217, 188);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Draw";
             // 
             // text
             // 
-            this.text.Location = new System.Drawing.Point(32, 119);
+            this.text.Location = new System.Drawing.Point(32, 125);
             this.text.Multiline = true;
             this.text.Name = "text";
             this.text.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.text.Size = new System.Drawing.Size(174, 79);
+            this.text.Size = new System.Drawing.Size(185, 63);
             this.text.TabIndex = 6;
             this.text.WordWrap = false;
             // 
@@ -266,7 +267,7 @@
             // fill_box
             // 
             this.fill_box.AutoSize = true;
-            this.fill_box.Location = new System.Drawing.Point(258, 134);
+            this.fill_box.Location = new System.Drawing.Point(316, 133);
             this.fill_box.Name = "fill_box";
             this.fill_box.Size = new System.Drawing.Size(38, 17);
             this.fill_box.TabIndex = 0;
@@ -276,7 +277,7 @@
             // outline_box
             // 
             this.outline_box.AutoSize = true;
-            this.outline_box.Location = new System.Drawing.Point(258, 157);
+            this.outline_box.Location = new System.Drawing.Point(316, 156);
             this.outline_box.Name = "outline_box";
             this.outline_box.Size = new System.Drawing.Size(59, 17);
             this.outline_box.TabIndex = 0;
@@ -285,9 +286,10 @@
             // 
             // drawPanel
             // 
-            this.drawPanel.Location = new System.Drawing.Point(0, 257);
+            this.drawPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.drawPanel.Location = new System.Drawing.Point(0, 239);
             this.drawPanel.Name = "drawPanel";
-            this.drawPanel.Size = new System.Drawing.Size(677, 193);
+            this.drawPanel.Size = new System.Drawing.Size(677, 211);
             this.drawPanel.TabIndex = 0;
             this.drawPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.drawPanel_Paint);
             this.drawPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.drawPanel_MouseDown);
