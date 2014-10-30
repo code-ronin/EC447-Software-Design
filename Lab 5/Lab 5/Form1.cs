@@ -147,7 +147,6 @@ namespace Lab_5
         }
     }
     //Create the base class MyObject
-    //This base class doesn't do anything, it's just for easier refernece in drawPanel_Paint
     public class MyObject
     {
         public virtual void draw(Graphics g)
